@@ -36,5 +36,3 @@ Building itself is as easy as running
 
 This will create a build for your current operating system under the <code>build/</code> subdirectory.
 Building takes less than a minute on a modern Windows PC, but can take over 30 minutes on low-power systems such as the Raspberry Pi.
-
-## More documentation will be added soon.
