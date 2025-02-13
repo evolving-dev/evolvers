@@ -9,16 +9,6 @@ def readfile(name):
     with open(name,"rb") as f:
         return f.read().decode("utf-8")
 
-
-class const:
-    WHITE = [255,255,255]
-    BLACK = [0,0,0]
-    LIGHT_GREY = [200,200,200]
-    GREY = [100,100,100]
-    DARK_GREY = [50,50,50]
-    RED = [255,0,0]
-    GREEN = [0,200,0]
-
 dimensions = [1280,720]
 target_fps = 60
 current_screen = "simulation"
@@ -84,7 +74,7 @@ while open:
     if current_screen == "simulation":
         cam.update(pygame.key.get_pressed(), dt)
 
-        test_world.full_world_iteration(override_dt = dt if global_speed == 1 else global_speed * (1 / target_fps))
+        test_world.full_world_iteration(override_dt = dt if global_speed == 1 else global_speed / target_fps)
         #test_world.visible_only_world_iteration(renderer, cam, global_speed)
         #sped up iterations while converving accuracy
         for i in range(global_speed):

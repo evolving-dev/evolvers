@@ -1,6 +1,6 @@
 import cx_Freeze
 
-executables = [cx_Freeze.Executable("run_v2.py",icon="images/icon.ico",base="Win32GUI")]
+executables = [cx_Freeze.Executable("run.py",icon="images/icon.ico",base="Win32GUI")]
 
 included_files = ["images/", "font/", "pygame_textinput.py", "Camera.py", "Chunk.py", "Creature.py", "CreatureManager.py", "CreatureNames.py", "GeneticNN.py", "NeuralNetworkRenderer.py", "NewWorldGenerator.py", "Renderer.py", "World.py", "LICENSE Pygame Textinput.txt"]
 
